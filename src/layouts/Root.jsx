@@ -9,7 +9,9 @@ const Root = () => {
                 <Navbar />
             </div>
             {/* {Packet} */}
-            <Outlet />
+            <div className='min-h-[calc(100vh-135px)]'>
+                <Outlet />
+            </div>
 
             {/* footer */}
             <Footer/>
