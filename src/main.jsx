@@ -7,6 +7,7 @@ import Blogs from './pages/Blogs';
 import ErrorPage from './pages/ErrorPage.jsx';
 import Home from './pages/Home';
 import Bookmarks from './pages/Bookmarks';
+import Blog from './pages/Blog';
 
 const router = createBrowserRouter([
     {
@@ -22,6 +23,12 @@ const router = createBrowserRouter([
                 path: '/blogs',
                 element: <Blogs />,
                 loader: () => fetch('https://dev.to/api/articles/latest?per_page=20&top=7')
+            },
+            {
+                path:'/blog/:id',
+                element: <Blog/>,
+                loader: ({params}) => 
+fetch(`https://dev.to/api/articles/${params.id}`),
             },
             {
                 path: '/bookmarks',

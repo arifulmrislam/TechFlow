@@ -37,7 +37,7 @@ const Blogs = () => {
                         <span className='text-xs dark:text-gray-600'>
                             {new Date(blogs[0].published_at).toLocaleDateString()}d
                         </span>
-                        <p>{blogs[0].description}</p>
+                        <p>{blogs[0].descriptiongi}</p>
                     </div>
                 </a>
                 <div className='grid justify-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3'>
