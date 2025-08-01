@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useLoaderData } from 'react-router-dom';
+import { Link, Outlet, useLoaderData } from 'react-router-dom';
 
 const Blog = () => {
     const [tabIndex, setTabIndex] = useState(0);
@@ -10,11 +10,12 @@ const Blog = () => {
         reading_time_minutes,
         public_reactions_count,
         published_at,
+        tags,
     } = blog;
 
     return (
         <div className='max-w-4xl px-6 py-16 mx-auto space-y-12'>
-            <article className='space-y-8 dark:bg-gray-100 dark:text-gray-900'>
+            <article className='space-y-8 dark:bg-gray-100 dark:text-gray-900 p-2'>
                 <div className='space-y-6'>
                     <h1 className='text-4xl font-bold md:tracking-tight md:text-5xl'>
                         {title}
@@ -32,10 +33,10 @@ const Blog = () => {
                 </div>
 
                 {/* Tabs */}
-                <div className='flex items-center -mx-4 overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800'>
+                <div className='flex items-center overflow-x-auto overflow-y-hidden sm:justify-start flex-nowrap dark:bg-gray-100 dark:text-gray-800'>
                     <Link
                         onClick={() => setTabIndex(0)}
-                        to=' '
+                        to=''
                         rel='noopener noreferrer'
                         href='#'
                         className={`flex items-center flex-shrink-0 px-5 py-3 space-x-2 ${tabIndex === 0 ? 'border border-b-0' : 'border-b'
@@ -81,50 +82,19 @@ const Blog = () => {
                 </div>
 
                 {/* Tabs */}
+                <Outlet />
             </article>
             <div>
                 <div className='flex flex-wrap py-6 gap-2 border-t border-dashed dark:border-gray-600'>
-                    <a
-                        rel='noopener noreferrer'
-                        href='#'
-                        className='px-3 py-1 rounded-sm hover:underline dark:bg-violet-600 dark:text-gray-50'
-                    >
-                        #MambaUI
-                    </a>
-                    <a
-                        rel='noopener noreferrer'
-                        href='#'
-                        className='px-3 py-1 rounded-sm hover:underline dark:bg-violet-600 dark:text-gray-50'
-                    >
-                        #TailwindCSS
-                    </a>
-                    <a
-                        rel='noopener noreferrer'
-                        href='#'
-                        className='px-3 py-1 rounded-sm hover:underline dark:bg-violet-600 dark:text-gray-50'
-                    >
-                        #Angular
-                    </a>
-                </div>
-                <div className='space-y-2'>
-                    <h4 className='text-lg font-semibold'>Related posts</h4>
-                    <ul className='ml-4 space-y-1 list-disc'>
-                        <li>
-                            <a rel='noopener noreferrer' href='#' className='hover:underline'>
-                                Nunc id magna mollis
-                            </a>
-                        </li>
-                        <li>
-                            <a rel='noopener noreferrer' href='#' className='hover:underline'>
-                                Duis molestie, neque eget pretium lobortis
-                            </a>
-                        </li>
-                        <li>
-                            <a rel='noopener noreferrer' href='#' className='hover:underline'>
-                                Mauris nec urna volutpat, aliquam lectus sit amet
-                            </a>
-                        </li>
-                    </ul>
+                    {tags.map((tag) => (
+                        <a
+                            rel='noopener noreferrer'
+                            href='#'
+                            className='px-3 py-1 rounded-sm hover:underline dark:text-gray-700'
+                        >
+                            #{tag}
+                        </a>
+                    ))}
                 </div>
             </div>
         </div>
