@@ -1,9 +1,11 @@
 import { useState } from 'react';
-import { Link, Outlet, useLoaderData } from 'react-router-dom';
+import { Link, Outlet, useLoaderData, useNavigation } from 'react-router-dom';
+import Loader from '../components/Loader';
 
 const Blog = () => {
     const [tabIndex, setTabIndex] = useState(0);
-    const blog = useLoaderData();
+    const blog = useLoaderData(0);
+    const navigation = useNavigation();
     const {
         comments_count,
         title,
@@ -13,6 +15,8 @@ const Blog = () => {
         tags,
     } = blog;
 
+    if (navigation.state === 'loading') return <Loader/>
+    
     return (
         <div className='max-w-4xl px-6 py-16 mx-auto space-y-12'>
             <article className='space-y-8 dark:bg-gray-100 dark:text-gray-900 p-2'>

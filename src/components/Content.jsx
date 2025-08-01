@@ -7,7 +7,6 @@ import rehypeRaw from 'rehype-raw';
 const Content = () => {
     const blog = useLoaderData();
     const { cover_image, image, title, description, published_at, id, tags, body_html } = blog;
-    console.log(blog)
     return (
         <div className=''>
             <Link
