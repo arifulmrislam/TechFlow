@@ -73,29 +73,39 @@ This app fetches blog posts using the [Dev.to API.](https://developers.forem.com
 
 🖼️ UI Inspirations
 
-TailwindCSS Buttons
+- [TailwindCSS Buttons](https://devdojo.com/tailwindcss/buttons)
 
-Mamba UI
+- [Mamba UI](https://mambaui.com/components)
 
-Daisy UI
+- [Daisy UI](https://daisyui.com/)
 
 Animated Gradient Heading with Tailwind and CSS
 
-⚠️ License
-This project is open-source and free to use. Attribution to Dev.to and UI libraries is appreciated.
-
+## 📚 Resources:
+- [React Router Dom](https://reactrouter.com/)
+- [Animated Gradient Text](https://www.andrealves.dev/blog/how-to-make-an-animated-gradient-text-with-tailwindcss/)
+- [Dev.to API Docs](https://developers.forem.com/api/v1#tag/articles/operation/getArticles)
+- [React-Hot-Toast](https://react-hot-toast.com/)
+- [React-Spinner](https://www.npmjs.com/package/react-spinners)
+- [React-Icons](https://react-icons.github.io/react-icons/)
+- [React-Markdown](https://www.npmjs.com/package/react-markdown)
+- [ReHype-Raw](https://www.npmjs.com/package/rehype-raw)
+- [Prop-Types](https://www.npmjs.com/package/prop-types)
+  
 🙌 Acknowledgements
 Thanks to the creators of the tools and libraries used in this project. Special thanks to:
 
-Dev.to
-
-Tailwind Labs
-
-Daisy UI
+- 💻 [Dev.to](https://dev.to/)
+- 🎨 [Tailwind Labs](https://tailwindcss.com/)
+- 🧩 [Daisy UI](https://daisyui.com/)
+- 💎 [Mamba UI](https://mambaui.com/)
 
 Mamba UI
 
 All contributors to the React ecosystem!
+
+⚠️ License
+This project is open-source and free to use. Attribution to Dev.to and UI libraries is appreciated.
 
 👨‍💻 Author
 Ariful Islam Arif
