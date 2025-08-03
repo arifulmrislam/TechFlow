@@ -57,20 +57,19 @@ src/
 1. **Clone the repo**
 
 ```bash
-[git clone https://github.com/your-username/your-repo-name.git](https://github.com/arifulmrislam/TechFlow.git)
-cd your-repo-name
+git clone https://github.com/arifulmrislam/TechFlow.git
+cd TechFlow
 Install dependencies
 
 
 npm install
 Start the development server
 
-
 npm run dev
 ```
 
 📘 Dev.to API Documentation
-This app fetches blog posts using the Dev.to API. Refer to their documentation for rate limits and usage policies.
+This app fetches blog posts using the [Dev.to API.](https://developers.forem.com/api/) Refer to their documentation for rate limits and usage policies.
 
 🖼️ UI Inspirations
 TailwindCSS Buttons
