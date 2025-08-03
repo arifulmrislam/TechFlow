@@ -57,7 +57,7 @@ src/
 1. **Clone the repo**
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+[git clone https://github.com/your-username/your-repo-name.git](https://github.com/arifulmrislam/TechFlow.git)
 cd your-repo-name
 Install dependencies
 
