@@ -98,8 +98,6 @@ All contributors to the React ecosystem!
 👨‍💻 Author
 Ariful Islam Arif
 
-Find me on GitHub
-
 ---
 
 Let me know if you want a version with badges (for Netlify, license, tech stack, etc.) or need to auto-generate sections like "Contributing" or "Tests."
