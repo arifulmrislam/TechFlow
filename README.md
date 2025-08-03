@@ -72,6 +72,7 @@ npm run dev
 This app fetches blog posts using the [Dev.to API.](https://developers.forem.com/api/) Refer to their documentation for rate limits and usage policies.
 
 🖼️ UI Inspirations
+
 TailwindCSS Buttons
 
 Mamba UI
