@@ -41,7 +41,7 @@ A modern and responsive blog application built with **React**, **TailwindCSS**, 
 
 ## 📁 Folder Structure
 
-- src/
+src/
 - │
 - ├── components/ # Reusable UI components (Buttons, Navbar, etc.)
 - ├── pages/ # Main pages (Home, BlogDetails, Bookmarks)
@@ -67,6 +67,8 @@ Start the development server
 
 
 npm run dev
+```
+
 📘 Dev.to API Documentation
 This app fetches blog posts using the Dev.to API. Refer to their documentation for rate limits and usage policies.
 
