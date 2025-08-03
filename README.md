@@ -50,10 +50,6 @@ src/
 ├── main.jsx # Entry point
 └── index.css # Tailwind and base styles
 
-yaml
-Copy
-Edit
-
 ---
 
 ## 📦 Installation & Setup
@@ -65,15 +61,11 @@ git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 Install dependencies
 
-bash
-Copy
-Edit
+
 npm install
 Start the development server
 
-bash
-Copy
-Edit
+
 npm run dev
 📘 Dev.to API Documentation
 This app fetches blog posts using the Dev.to API. Refer to their documentation for rate limits and usage policies.
@@ -108,10 +100,6 @@ Ariful Islam Arif
 
 Find me on GitHub
 
-yaml
-Copy
-Edit
-
 ---
 
-Let me know if you want a version with badges (for Netlify, license, tech stack, etc.) or need to a
+Let me know if you want a version with badges (for Netlify, license, tech stack, etc.) or need to auto-generate sections like "Contributing" or "Tests."
