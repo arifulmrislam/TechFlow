@@ -42,7 +42,6 @@ A modern and responsive blog application built with **React**, **TailwindCSS**, 
 ## 📁 Folder Structure
 
 src/
-- │
 - ├── components/ # Reusable UI components (Buttons, Navbar, etc.)
 - ├── pages/ # Main pages (Home, BlogDetails, Bookmarks)
 - ├── utils/ # Utility functions (API requests, localStorage)
